@@ -4,8 +4,8 @@
 	<title>Ho blogs</title>
 	<meta charset="utf-8">
 	<meta name="author" content="123">
-	<link rel="stylesheet"  href="css/reset.css">
-	<link rel="stylesheet"  href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 	<header>
@@ -101,6 +101,19 @@
 	<footer>
 		<div class="wrapper">
 			<img class="logo_footer" src="img\siu.jpg" alt="Blog" title="" width="60" height="45">
+			<body>
+			    <div id="times">
+			    </div>
+			   <script type="text/javascript">
+			     function  getD1(){
+			         var date=new Date();
+			         var d1=date.toLocaleString();
+			         var div1=document.getElementById("times");
+			         div1.innerHTML =d1;
+			     }
+			     setInterval("getD1();",1000);
+			    </script>
+			 </body>
 			<p class="rights">© 2019   -  All Rights By Ho </p>
 			<ul class="social_profiles">
 				<li class="f"><a href="#" target="_blink"></a></li>
